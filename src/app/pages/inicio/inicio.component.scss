@@ -1,0 +1,24 @@
+.Mes_normal {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fecha_normal {
+    font-weight: 800;
+    text-align: center;
+    // margin-top: -20px;
+    // font-size: 4em;
+}
+
+
+.shadow-selection-link {
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+
+.shadow-selection-link:hover {
+    /* box-shadow: 0 5px 15px #ccc; */
+    box-shadow:  7px 5px 5px #777;
+    cursor: pointer;
+}

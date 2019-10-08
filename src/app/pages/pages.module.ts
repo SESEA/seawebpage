@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { UIModule } from '../shared/ui/ui.module';
 import { PagesRoutingModule } from './pages-routing.module';
@@ -20,6 +20,7 @@ import { InstitucionesComponent } from './nosotros/instituciones/instituciones.c
 import { DirectorioComponent } from './nosotros/directorio/directorio.component';
 import { QueHacemosComponent } from './como-funciona/que-hacemos/que-hacemos.component';
 import { EstructuraComponent } from './como-funciona/estructura/estructura.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,8 @@ import { EstructuraComponent } from './como-funciona/estructura/estructura.compo
     NgbDropdownModule,
     UIModule,
     PagesRoutingModule,
+    NgbModule,
+    CoreModule
   ]
 })
 export class PagesModule { }

@@ -1,3 +1,45 @@
-<p>
-  inicio works!
-</p>
+<div class="row">
+  <div class="card card-body shadow">
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor="let item of [65,1,111,345,46,88,71]">
+        <div class="picsum-img-wrapper">
+          <img class="img-fluid w-100" src='https://picsum.photos/id/{{item}}/2560/800'
+            alt="Random first slide" style="min-height: 300px; max-height: 500px;">
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+
+    </ngb-carousel>
+  </div>
+</div>
+
+
+<div class="col-sm-9 offset-sm-1">
+  <div class="row">
+    <div class="col-lg-6  " *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"  >
+      <div class="card card-body shadow-selection-link" >
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3 text-center fecha">
+            <h3 id="mes-5056" class="Mes_normal" style="text-transform: uppercase;">Ago</h3>
+            <h1 id="fecha-5056" class="fecha_normal"> {{ 32 - item }}</h1>
+          </div>
+
+          <div class="col-sm-12 col-md-9 col-lg-9">
+
+            <h4 class="card-title">
+              Se aprueba el Programa Nacional de Combate a la Corrupción y a la Impunidad, y de Mejora de la Gestión
+              Pública
+            </h4>
+
+            <p class="text-justify">
+             {{noticia | truncate: [200] }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

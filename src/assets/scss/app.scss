@@ -84,3 +84,12 @@ File: Main Css File
 @import "custom/plugins/jstree";
 @import "custom/plugins/google-maps";
 @import "custom/plugins/vector-maps";
+
+
+.card h1 .card-title {
+    color: #475d69 !important;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.35);
+}

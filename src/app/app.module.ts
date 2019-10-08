@@ -10,6 +10,7 @@ import { FakeBackendProvider } from './core/helpers/fake-backend';
 import { LayoutsModule } from './layouts/layouts.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     LayoutsModule,
     AppRoutingModule,
+    CoreModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
