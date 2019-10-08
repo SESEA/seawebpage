@@ -4,31 +4,64 @@
             <!-- Navigation Menu-->
             <ul class="navigation-menu">
 
-                <li class="has-submenu">
-                    <a [routerLink]="['/']" class="side-nav-link-ref"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
+                    <a [routerLink]="['/inicio']" class="side-nav-link-ref"><i class="fas fa-home"></i>INICIO</a>
                 </li>
 
-                <li class="has-submenu">
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
                     <a href="javascript: void(0);" (click)="onMenuClick($event)">
-                        <i class="mdi mdi-share-variant"></i>Menu Levels <div class="arrow-down"></div>
+                        <i class="fas fa-user-friends"></i>
+                        NOSOTROS
+                        <div class="arrow-down"></div>
                     </a>
                     <ul class="submenu">
-                        <li>
-                            <a href="javascript: void(0);" class="side-nav-link-ref">Level 1.1</a>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/nosotros/antecedentes']" routerLinkActive="router-link-active"  class="side-nav-link-ref">Antecedentes</a>
                         </li>
-                        <li class="has-submenu">
-                            <a href="javascript: void(0);" (click)="onMenuClick($event)">Level 1.2 <div
-                                    class="arrow-down"></div></a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="javascript: void(0);" class="side-nav-link-ref">Level 2.1</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);" class="side-nav-link-ref">Level 2.2</a>
-                                </li>
-                            </ul>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/nosotros/quienes-somos']" class="side-nav-link-ref">Quienes Somos</a>
+                        </li>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/nosotros/mision']" class="side-nav-link-ref">Misión</a>
+                        </li>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/nosotros/integrantes']" class="side-nav-link-ref">Integrantes</a>
+                        </li>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/nosotros/instituciones']" class="side-nav-link-ref">Instituciones</a>
+                        </li>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/nosotros/directorio']" class="side-nav-link-ref">Directorio</a>
                         </li>
                     </ul>
+                </li>
+
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)">
+                        <i class="fas fa-cogs"></i>
+                        ¿CÓMO FUNCIONA?
+                        <div class="arrow-down"></div>
+                    </a>
+                    <ul class="submenu">
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/como-funciona/que-hacemos']" class="side-nav-link-ref">¿Qué hacemos?</a>
+                        </li>
+                        <li [routerLinkActive]='["active"]'>
+                            <a [routerLink]="['/como-funciona/estructura']" class="side-nav-link-ref">Estructura</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
+                    <a [routerLink]="['/noticias']" class="side-nav-link-ref"><i class="far fa-newspaper"></i>NOTICIAS</a>
+                </li>
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
+                    <a [routerLink]="['/transparencia']" class="side-nav-link-ref"><i class="fas fa-search"></i>TRANSPARENCIA</a>
+                </li>
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
+                    <a [routerLink]="['/sesiones']" class="side-nav-link-ref"><i class="mdi mdi-chat"></i>SESIONES</a>
+                </li>
+                <li class="has-submenu" [routerLinkActive]='["active"]'>
+                    <a [routerLink]="['/indicadores']" class="side-nav-link-ref"><i class="fas fa-chart-bar"></i>INDICADORES</a>
                 </li>
             </ul>
             <!-- End navigation menu -->
